@@ -5,14 +5,9 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-          title: Text("Pokemon"),
-          backgroundColor: Colors.red,
-          actions: <Widget>[
-            IconButton(
-              icon: Icon(Icons.search),
-              onPressed: () {},
-            )
-          ]),
+        title: Text("Pokemon"),
+        backgroundColor: Colors.red,
+      ),
       body: Center(
         child: Container(
           width: 180,
@@ -31,8 +26,7 @@ class HomePage extends StatelessWidget {
                       color: HexColor("#ff0000"),
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(100),
-                          topRight: Radius.circular(100))
-                  ),
+                          topRight: Radius.circular(100))),
                 ),
               ),
               Positioned(
@@ -46,14 +40,13 @@ class HomePage extends StatelessWidget {
                 top: 85,
               ),
               Positioned(
-                  child: Container(
+                child: Container(
                   width: 40,
                   height: 40,
                   decoration: BoxDecoration(
-                    border: Border.all(color: Colors.black, width: 6),
-                    shape: BoxShape.circle,
-                    color: Colors.white
-                  ),
+                      border: Border.all(color: Colors.black, width: 6),
+                      shape: BoxShape.circle,
+                      color: Colors.white),
                 ),
                 top: 65,
                 left: 62,
