@@ -4,14 +4,15 @@ class PokemonListPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-          title: Text("PokemonList"),
-          backgroundColor: Colors.red,
-          actions: <Widget>[
-            IconButton(
-              icon: Icon(Icons.search),
-              onPressed: () {},
-            )
-          ]),
+        title: Text("PokemonList"),
+        backgroundColor: Colors.red,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: () {},
+          )
+        ]
+      ),
     );
   }
 }
