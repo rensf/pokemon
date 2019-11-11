@@ -13,6 +13,9 @@ class PokemonListPage extends StatelessWidget {
           )
         ]
       ),
+      body: Center(
+        child: PokemonList(),
+      ),
     );
   }
 }
