@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'home.dart';
 import 'pokemonList.dart';
+import 'pokemonDetail.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/" : (BuildContext context) => HomePage(),
         "/pl": (BuildContext context) => PokemonListPage(),
+        "/pd": (BuildContext context) => PokemonDetailPage()
       },
     );
   }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:pokemon/entity/pokemon.dart';
+
 class PokemonListPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -48,6 +50,9 @@ class _PokemonListState extends State<PokemonList> {
         Icons.keyboard_arrow_right,
         color: Colors.green,
       ), //显示右侧的箭头，不显示则传null
+      onTap: () {
+        Navigator.pushNamed(context, "/pd", arguments: Pokemon(item["name"]));
+      },
     );
   }
 
